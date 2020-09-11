@@ -1,0 +1,34 @@
+{
+	"deviceShadow":{
+		"ts" : [(${shadow.ts})],
+		"temperature" : [(${shadow.temperature})],
+		"potency" : [(${shadow.potency})],
+		"humidity" : [(${shadow.humidity})],
+		"fanState" : [(${shadow.fanState})],
+		"cleanerState" : [(${shadow.cleanerState})],
+		"pm" : [(${shadow.pm})],
+		"opened" : [(${shadow.opened})],
+		"nmch" : [(${shadow.nmch})],
+		"purificationRate" : [(${shadow.purificationRate})],
+		"avg10Potency" : [(${shadow.avg10Potency})],
+		"businessHours" : [(${shadow.businessHours})],
+		"merchantType" : [(${shadow.merchantType})]
+	},
+	"warning":{
+		"name" : [(${warning.name})],
+		"lv" : [(${warning.lv})]
+	},
+	"expressionTest":{
+	    "purePlus" : [(2+3)],
+	    "numberPlusVar1" : [(2+${shadow.ts})],
+	    "numberPlusVar2" : [(${shadow.ts}+3)],
+	    "multiExpress1":[(2+3*5)],
+	    "multiExpress2":[(3*5+2)],
+	    "multiExpress3":[(2+3-1)],
+	    "multiExpress4":[(2+3-1/2.0)],
+	    "multiExpress5":[(2+3-1/2.0-3)],
+	    "multiExpress6":[(2+3-1/2.0-3*${shadow.ts}-${shadow.potency})],
+	    "multiExpress7":[("shadow.ts_"+${shadow.ts})],
+	    "multiExpress8":[(${shadow.ts}+"_\\\""+${warning.name})]
+	}
+}
